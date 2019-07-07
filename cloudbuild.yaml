@@ -5,10 +5,10 @@ steps:
   args: [
     'functions', 
     'deploy', 
+    'resizeImage',
     '--entry-point', 
     'helloWorld', 
     '--runtime', 'nodejs6', 
-    '--trigger-topic', 'helloWorld',
-    '--project', 'photo-storage-test-40dab' 
+    '--trigger-topic', 'helloWorld'
   ]
   dir: ''
