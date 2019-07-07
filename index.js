@@ -23,7 +23,7 @@ exports.resizeImage = (event, context) => {
     console.log("filepath =", filePath);
 
     if (path.basename(filePath).endsWith(suffix)) {
-      console.log('File has already been altered. Take no action');
+      console.log('File is already small. Skipping.');
       return;
     }
 

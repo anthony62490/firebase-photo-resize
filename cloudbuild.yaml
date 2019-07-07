@@ -3,12 +3,8 @@ steps:
   args: ['install']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: [
-    'functions', 
-    'deploy', 
-    'resizeImage',
-    '--entry-point', 
-    'ResizeImage', 
-    '--runtime', 'nodejs8', 
-    '--trigger-topic', 'ResizeImage'
+    'functions', 'deploy', 'resizeImage',
+    '--runtime', 'nodejs8',
+    '--trigger-event', 'google.storage.object.finalize'
   ]
   dir: ''
