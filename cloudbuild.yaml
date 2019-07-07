@@ -10,7 +10,6 @@ steps:
     '--entry-point', 
     'helloWorld', 
     '--runtime', 'nodejs6', 
-    '--trigger-topic', 'helloWorld',
-    '--env-vars-file', '.env'
+    '--trigger-topic', 'helloWorld'
   ]
   dir: ''
