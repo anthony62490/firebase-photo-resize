@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "functions-framework --target=helloWorld"
+    "start": "functions-framework --target=ResizeImage"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
   },
   "homepage": "https://github.com/anthony62490/firebase-photo-resize#readme",
   "dependencies": {
-    "@google-cloud/functions-framework": "^1.1.1"
+    "@google-cloud/functions-framework": "^1.1.1",
+    "child-process-promise": "^2.2.1",
+    "dotenv": "^8.0.0",
+    "firebase": "^6.2.4",
+    "firebase-admin": "^8.2.0",
+    "firebase-functions": "^3.0.2",
+    "os": "^0.1.1",
+    "path": "^0.12.7"
   }
 }
