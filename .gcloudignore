@@ -14,4 +14,6 @@
 .gitignore
 
 node_modules
+README.md
+todo
 #!include:.gitignore
